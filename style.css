@@ -429,6 +429,22 @@ hr{
 
 
 
+
+.mainblock5{
+	border:4px solid #4c2566;
+	width: 1000px;
+	height: 795px;
+	background: #fff;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.mainblock5 img{
+	width: 100%;
+}
+
+
+
+
 /*---------topbutton---------*/
 
 #myBtn {
