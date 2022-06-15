@@ -29,18 +29,106 @@
                     <li><a href="blog.html" >ბლოგი</a></li>    
                     <li><a href="bmi.html" >კალკულატორი</a></li>    
                     <li><a href="" >ფოტო</a></li>    
-                    <li><a href="" >ვიდეო</a></li>   
+                    <li><a href="https://www.youtube.com/c/yogawithadriene" target="_blank">იოგა</a></li>  
                     <li><a href="about.html" >ჩვენ შესახებ</a></li>  
                     <li><a href="#footer">კონტაქტი</a></li>
                 </ul>	
             </div>
         </div>
     
-        <div id="app">
-        </div>
 
-    </div> 
+        <div class="mainblock3">
 
+            <div class="sidebar"> 
+                <div class="calendar">
+                    <h1>კალენდარი</h1>
+                    <a href="https://printcal.net/website-calendar-widget.php">
+                    <img src="https://printcal.net/web-calendar.png?size=s&w=m&ho=4&mo=00&so=1" alt="Printcal.net Calendar Widget"/></a>
+                </div>
+
+                <div class="weather"> 
+                <h1>ამინდი</h1>
+                <div id="ww_957273c43b56a" v='1.20' loc='auto' a='{"t":"horizontal","lang":"ka","ids":["wl11843"],"cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'>Weather Data Source: <a href="https://sharpweather.com/" id="ww_957273c43b56a_u" target="_blank">Sharp Weather</a></div>
+                <script async src="https://srv2.weatherwidget.org/js/?id=ww_957273c43b56a"></script>
+                </div>
+                
+            </div>
+
+
+            <div class="bmi">
+                <div id="bmi">
+                    <h1>რა არის BMI?</h1>
+                    <p> BMI - Body Mass Index. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Laoreet id donec ultrices tincidunt. Rutrum quisque non tellus orci ac auctor augue.
+                        Dapibus ultrices in iaculis nunc sed augue. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce.
+                    </p>
+                    
+                </div>
+
+
+
+                <div id="contentArea">
+                    <div id="converter">
+                        <h2>წონის გადამყვანი</h2>
+                        <p style="font-size: 0.85em;"><em>სურვილის შემთხვევაში შეგიძლიათ გამოიყენოთ წონის გადამყვანი ფუნტებიდან კილოგრამებში</em></p>
+                        <p>
+                            <label><ins><strong>ფუნტი</strong></ins></label>
+                            <input id="inputPounds" type="number" placeholder="Pounds"
+                            oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+                        </p>
+                        <p><ins><strong>კილოგრამი: </strong></ins><span id="outputKilograms"></span></p> 
+
+                    </div>
+
+                    
+                </div>
+            </div>    
+            
+
+            <div id="bmi2">
+                <h2>როგორ გამოვითვალო ჩემი BMI?</h2>
+                <p>თქვენი BMI-ს გასაგებად ქვემოთ მოყვანილია გამომთვლელი. პირველ გრაფაში მიუთითეთ წონა <mark>კილოგრამებში</mark> (მაგალითად: 62.3), მეორე გრაფაში კი - სიმაღლე <mark>მეტრებში</mark> (მაგალითად: 1.75).</p>
+                <p>დააჭირეთ ტოლობას. ტოლობის მარჯვნივ მიღებული რიცხვი არის თქვენი BMI.</p>
+            </div>
+            <div id="app"></div>
+
+
+            <div id="bmi3"><h3>ნახეთ რომელ კატეგორიას განეკუთვნებით:</h3></div>
+
+
+
+            <div id="bmicat">
+                <button class="tablink" onclick="openPage('Home', this, 'red')"> <18.5 </button>
+                <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">18.5–24.9</button>
+                <button class="tablink" onclick="openPage('Contact', this, 'blue')">25–29.9 </button>
+                <button class="tablink" onclick="openPage('About', this, 'orange')">30></button>
+                
+                <div id="Home" class="tabcontent">
+                <h3>Home</h3>
+                <p>below 18.5 – you're in the underweight range.</p>
+                </div>
+                
+                <div id="News" class="tabcontent">
+                <h3>News</h3>
+                <p>between 18.5 and 24.9 – you're in the healthy weight range.</p>
+                </div>
+                
+                <div id="Contact" class="tabcontent">
+                <h3>Contact</h3>
+                <p>between 25 and 29.9 – you're in the overweight range.</p>
+                </div>
+                
+                <div id="About" class="tabcontent">
+                <h3>About</h3>
+                <p>between 30 and 39.9 – you're in the obese range.</p>
+                </div> 
+            </div>
+
+
+        
+        </div> 
+
+    </div>
 
 
 	<div class="footer" id="footer">
